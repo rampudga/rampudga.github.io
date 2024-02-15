@@ -58,7 +58,7 @@ Link to the portfolio:
 ## Technical Requirements
 
 ### Task 1 : Basic Javascript Code
-In Miscellaneous tab I added digital clock, analog clock, show or hide email, and from different feature named greeting which used to greet at the start of the page like "GOOD MORNING", "GOOD AFTERNOON" , "GOOD EVENING", based on the time.
+In Miscellaneous tab I added digital clock, analog clock, show or hide email, and from different feature named greeting which used to greet at the start of the page like "GOOD MORNING", "GOOD AFTERNOON" , "GOOD EVENING", based on the time hour. It displays as an alert and then it displays on the page.
 ```JS
 // greetings.js
 const Greeting = () => {
