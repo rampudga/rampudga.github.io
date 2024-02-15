@@ -132,7 +132,7 @@ ReactDOM.render(React.createElement(Greeting, null), document.getElementById('gr
 ```JS
 <script>
 //other script
-<div id="greetingCookie">Hello</div>
+<div id1="greetingCookie">Hello</div>
 //other script
      function setCookie(name, value, expiryDays) {
             const d = new Date();
@@ -142,7 +142,7 @@ ReactDOM.render(React.createElement(Greeting, null), document.getElementById('gr
         }
 
         function getCookie(name) {
-            let cookieName = name + "=";
+            let cookName = name + "=";
             let decodedCookie = decodeURIComponent(document.cookie);
             let ca = decodedCookie.split(';');
             for(let i = 0; i <ca.length; i++) {
@@ -150,23 +150,23 @@ ReactDOM.render(React.createElement(Greeting, null), document.getElementById('gr
                 while (c.charAt(0) == ' ') {
                     c = c.substring(1);
                 }
-                if (c.indexOf(cookieName) == 0) {
-                    return c.substring(cookieName.length, c.length);
+                if (c.indexOf(cookName) == 0) {
+                    return c.substring(cookName.length, c.length);
                 }
             }
             return "";
         }
 
         function welcomeUser() {
-            const lastVisit = getCookie("lastVisit");
-            const greetingElement = document.getElementById("greetingCookie");
-            if (lastVisit) {
-                greetingElement.innerHTML = "Welcome back! Your last visit was on " + lastVisit + ".";
+            const lastVis = getCookie("lastVis");
+            const greetEle = document.getElementById("greetingCookie");
+            if (lastVis) {
+                greetEle.innerHTML = "Welcome back! Your last visit was on " + lastVis + ".";
             } else {
-                greetingElement.innerHTML = "Welcome to my portfolio!";
+                greetEle.innerHTML = "Welcome to my portfolio!";
             }
             const now = new Date();
-            setCookie("lastVisit", now.toLocaleString(), 365);
+            setCookie("lastVis", now.toLocaleString(), 365);
         }
 
         welcomeUser();
