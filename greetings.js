@@ -4,11 +4,11 @@ const Greeting = () => {
   let greetingMessage;
 
   if (hour >= 5 && hour < 12) {
-    greetingMessage = 'Good morning!';
+    alert(greetingMessage = 'Good morning!');
   } else if (hour >= 12 && hour < 17) {
-    greetingMessage = 'Good afternoon!';
+    alert(greetingMessage = 'Good afternoon!');
   } else {
-    greetingMessage = 'Good evening!';
+    alert(greetingMessage = 'Good evening!');
   }
 
   return React.createElement('h2', null, greetingMessage);
