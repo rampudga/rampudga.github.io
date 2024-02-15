@@ -28,17 +28,17 @@ Link to the portfolio:
 ### Task 1 : General Requirements
  -Created a "rampudga.github.io" personal website where this includes basic profile details of me with no styling. [https://rampudga.github.io/resume.html](https://rampudga.github.io/resume.html)
 
- ![Basic Resume](/images/part1.png)
+ ![Basic Resume](part1.png)
 
 - Created a course link in index.html page in miscllaneous tab where it displays all the course work till now in WAPH course i.e all labs and hackathon reports pdfs.
 
-![Course Work](/images/part2.png)
+![Course Work](part2.png)
 
 \pagebreak
 ### Task 2 : Non-technical Requirements
 - Used a open source boootstrap template including page tracker. In Portfolio added few sections which focuses on the profile as part of job applicationwhich includes about, experience, education, skills, interests, certifications, miscllaneou sections.
 
-![BootStrap](/images/part4.png)
+![BootStrap](part4.png)
 
 - In page tracker google analytics is used which helps to track the visitors number with location and device.
 
@@ -52,7 +52,7 @@ Link to the portfolio:
         gtag('config', 'G-Z3PFRKP3DC');
     </script>
 ```
-![Page Tracker](/images/part3.png)
+![Page Tracker](part3.png)
 
 
 ## Technical Requirements
@@ -125,7 +125,7 @@ ReactDOM.render(React.createElement(Greeting, null), document.getElementById('gr
                         .catch(error => console.error('Error fetching data:', error));
                 </script>
 ```
-![Dog Image and Joke](/images/part5.png)
+![Dog Image and Joke](part5.png)
 
 ## Cookies Integration
 -Used setCookie(), getCookie() to set an ddisplay the message "welcome to my portfolio" and "welcome! Your Last Vist with date".
